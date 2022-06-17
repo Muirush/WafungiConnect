@@ -45,7 +45,7 @@
             android:textSize="21sp"
             android:layout_weight="1"
             android:padding="10dp"
-            android:inputType="textPassword"
+
 
             />
         <EditText
@@ -60,8 +60,10 @@
             android:textSize="21sp"
             android:layout_marginTop="20dp"
             android:padding="10dp"
+            android:inputType="textPassword"
             />
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/lButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login"
@@ -87,11 +89,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/forgetPassword"
                 android:text="Forgot Password?"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Click Here"/>
+                android:id="@+id/newHere"
+                android:text="New here"/>
 
         </LinearLayout>
 
