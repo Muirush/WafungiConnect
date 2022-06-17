@@ -10,25 +10,19 @@ import com.galoppingtech.wafungiconnect.R
 import com.galoppingtech.wafungiconnect.databinding.FragmentLoginBinding
 
 
-class LoginFragment : Fragment() {
+class LoginFragment : Fragment(R.layout.fragment_login) {
+    private var _binding : FragmentLoginBinding?= null
+    private  val binding get() = _binding!!
 
-        private lateinit var binding: FragmentLoginBinding
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-
-        }
-    }
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_login, container, false)
-
-    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        _binding = FragmentLoginBinding.bind(view)
+        initViews()
 
 
 
 }
+
+    private fun initViews() {
+        TODO("Not yet implemented")
+    }
