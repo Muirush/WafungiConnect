@@ -57,7 +57,7 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
         }
 
         binding.newHere.setOnClickListener(){
-           // findNavController().navigate()
+            findNavController().navigate(R.id.validatePhone)
 
         }
 

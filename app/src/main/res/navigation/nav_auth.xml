@@ -14,10 +14,40 @@
         <action
             android:id="@+id/action_loginFragment_to_home"
             app:destination="@id/home" />
+        <action
+            android:id="@+id/action_loginFragment_to_validatePhone"
+            app:destination="@id/validatePhone" />
     </fragment>
     <fragment
         android:id="@+id/home"
-        android:name="com.galoppingtech.wafungiconnect.Home"
+        android:name="com.galoppingtech.wafungiconnect.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home_to_createPost"
+            app:destination="@id/createPost" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.galoppingtech.wafungiconnect.Auth.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment2"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/validatePhone"
+        android:name="com.galoppingtech.wafungiconnect.Auth.ValidatePhone"
+        android:label="fragment_validate_phone"
+        tools:layout="@layout/fragment_validate_phone" >
+        <action
+            android:id="@+id/action_validatePhone_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createPost"
+        android:name="com.galoppingtech.wafungiconnect.CreatePost"
+        android:label="fragment_create_post"
+        tools:layout="@layout/fragment_create_post" />
 </navigation>

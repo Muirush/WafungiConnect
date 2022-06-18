@@ -1,14 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ValidatePhone">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    tools:context=".Auth.ValidatePhone">
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/Icon"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/icon"
+        tools:ignore="InvalidId" />
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:text="Wafungi connect"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        android:layout_below="@+id/Icon"
+        android:layout_marginTop="20dp"
 
-</FrameLayout>
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Icon"
+        android:layout_marginTop="70dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/regUsername"
+            android:background="@drawable/rounded"
+            android:hint="Phone number"
+            android:gravity="center"
+            android:textSize="21sp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:inputType="phone"
+
+
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/getCodeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Code"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cornerRadius="16dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="3dp"
+            android:layout_marginTop="20dp"
+            app:backgroundTint="@color/white"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/regEmail"
+            android:background="@drawable/rounded"
+            android:hint="6 Digit Code"
+            android:gravity="center"
+            android:textSize="21sp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:inputType="textEmailAddress"
+
+
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ValidCodeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Validate Code"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cornerRadius="16dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="3dp"
+            android:layout_marginTop="20dp"
+            app:backgroundTint="@color/white"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/resendCode"
+                android:text="Resend Code?"/>
+            <View
+                android:layout_width="30dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/counter"
+                android:text="0:59"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
