@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/menu_posts"
+    <item android:id="@+id/home"
         android:icon="@drawable/ic_baseline_home_24"
         android:title="Home">
 
@@ -11,19 +11,19 @@
         >
 
     </item>
-    <item android:id="@+id/menu_store"
+    <item android:id="@+id/storeFragment"
         android:icon="@drawable/ic_baseline_local_grocery_store_24"
         android:title="Store"
         >
 
     </item>
-    <item android:id="@+id/menu_profile"
+    <item android:id="@+id/profileFragment"
         android:icon="@drawable/ic_baseline_person_pin_24"
         android:title="Profile"
         >
 
     </item>
-    <item android:id="@+id/menu_info"
+    <item android:id="@+id/infoFragment"
         android:title="About"
         android:icon="@drawable/ic_baseline_info_24"
 

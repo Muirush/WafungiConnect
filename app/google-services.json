@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "401560125129",
+    "project_id": "wafungi-connect",
+    "storage_bucket": "wafungi-connect.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:401560125129:android:43db51f686fc829e3e1718",
+        "android_client_info": {
+          "package_name": "com.galoppingtech.wafungiconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "401560125129-qoc3g2cd7c5ib7fiubgahe1mvdeki5tg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDRFISH7EnayM9bXsS2c8Q77dQex6rUcw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "401560125129-qoc3g2cd7c5ib7fiubgahe1mvdeki5tg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
