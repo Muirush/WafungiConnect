@@ -11,6 +11,19 @@
         android:layout_height="wrap_content"
         android:textSize="40sp"
         android:text="CREATE"
+        android:id="@+id/t"
+        android:visibility="invisible"
+        android:gravity="center"
+
+        app:layout_constraintBottom_toTopOf="@+id/bottomNav"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="You need to register/login to create a post.. Click to Continue"
+        android:id="@+id/link"
+
         android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/bottomNav"
         app:layout_constraintTop_toTopOf="parent" />
@@ -26,6 +39,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+
         app:menu="@menu/bottom_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

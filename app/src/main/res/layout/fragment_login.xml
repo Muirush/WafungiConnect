@@ -38,13 +38,14 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:id="@+id/loginUsername"
+            android:id="@+id/loginEmail"
             android:background="@drawable/rounded"
-            android:hint="@string/username"
+            android:hint="Email"
             android:gravity="center"
             android:textSize="21sp"
             android:layout_weight="1"
             android:padding="10dp"
+            android:inputType="textEmailAddress"
 
 
             />

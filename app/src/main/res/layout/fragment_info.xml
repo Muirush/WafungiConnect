@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:textSize="40sp"
         android:text="INFO"
+        android:id="@+id/logMeOut"
         android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/bottomNav"
         app:layout_constraintTop_toTopOf="parent" />
