@@ -1,21 +1,18 @@
 package com.galoppingtech.wafungiconnect.Auth
 
-import android.app.Fragment
+import android.app.AlertDialog
+import android.app.Dialog
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.galoppingtech.wafungiconnect.R
-import com.galoppingtech.wafungiconnect.databinding.FragmentLoginBinding
 import com.galoppingtech.wafungiconnect.databinding.FragmentRegisterBinding
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 
 
-class RegisterFragment : Fragment(R.layout.fragment_register) {
+class RegisterFragment : Fragment(R.layout.fragment_register){
     private lateinit var auth: FirebaseAuth
     private var _binding: FragmentRegisterBinding? = null
     private val binding get() = _binding!!
@@ -62,16 +59,33 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
         auth.createUserWithEmailAndPassword(email, pwd)
             .addOnCompleteListener{ task ->
                 if (task.isSuccessful) {
+
+                    //OTP Dialog
+                    //createOTPDialog()
+
                     // Sign in success, update UI with the signed-in user's information
-                  findNavController().navigate(R.id.loginFragment)
+                  findNavController().navigate(R.id.validatePhone)
                     val user = auth.currentUser
 
                 } else {
                     // If sign in fails, display a message to the user.
 
-                    Snackbar.make(binding.root, "Failured", Snackbar.LENGTH_SHORT).show()
+                    Snackbar.make(binding.root, "Failed to register", Snackbar.LENGTH_SHORT).show()
 
                 }
             }
+    }
+    //OTP dialog function
+    fun createOTPDialog(){
+        val builder = AlertDialog.Builder(context)
+        builder.setTitle("OTP Authentication")
+            .setIcon(R.drawable.otp)
+            .apply {
+                setMessage("We are trying...")
+            }
+            .create()
+            .show()
+
+
     }
 }
