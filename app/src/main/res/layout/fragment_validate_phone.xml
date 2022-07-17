@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:id="@+id/regUsername"
+            android:id="@+id/phone"
             android:background="@drawable/rounded"
             android:hint="Phone number"
             android:gravity="center"
@@ -66,25 +66,31 @@
             app:backgroundTint="@color/white"
 
             />
+
+<!--        android:layout_width="wrap_content"
+            android:layout_height="wrap_content
+            android:itemBackground="@mipmap/ic_launcher"
+            "-->
+
         <com.chaos.view.PinView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:id="@+id/firstPinView"
+            android:id="@+id/otp"
             style="@style/PinWidget.PinView"
-           android:layout_gravity="center"
+            android:layout_gravity="center_horizontal"
             android:cursorVisible="true"
-            android:hint="Hint."
-            android:inputType="text"
+            android:hint="OTP PIN."
+            android:inputType="number"
 
             android:padding="10dp"
-            android:textColor="@color/black"
+           android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold"
             app:cursorColor="@color/black"
             app:cursorWidth="2dp"
-            app:hideLineWhenFilled="true"
+            app:hideLineWhenFilled="false"
             app:itemCount="6"
             app:itemHeight="48dp"
             app:itemRadius="4dp"
