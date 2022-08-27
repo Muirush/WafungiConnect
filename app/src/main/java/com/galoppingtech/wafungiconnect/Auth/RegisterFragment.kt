@@ -58,24 +58,24 @@ class RegisterFragment : Fragment(R.layout.fragment_register){
 
         findNavController().navigate(R.id.validatePhone)
 
-//        auth.createUserWithEmailAndPassword(email, pwd)
-//            .addOnCompleteListener{ task ->
-//                if (task.isSuccessful) {
-//
-//                    //OTP Dialog
-//                    //createOTPDialog()
-//
-//                    // Sign in success, update UI with the signed-in user's information
-//                  findNavController().navigate(R.id.validatePhone)
-//                    val user = auth.currentUser
-//
-//                } else {
-//                    // If sign in fails, display a message to the user.
-//
-//                    Snackbar.make(binding.root, "Failed to register", Snackbar.LENGTH_SHORT).show()
-//
-//                }
-//            }
+        auth.createUserWithEmailAndPassword(email, pwd)
+            .addOnCompleteListener{ task ->
+                if (task.isSuccessful) {
+
+                    //OTP Dialog
+                    //createOTPDialog()
+
+                    // Sign in success, update UI with the signed-in user's information
+                  findNavController().navigate(R.id.validatePhone)
+                    val user = auth.currentUser
+
+                } else {
+                    // If sign in fails, display a message to the user.
+
+                  //  Snackbar.make(binding.root, "Failed to register", Snackbar.LENGTH_SHORT).show()
+
+                }
+            }
     }
     //OTP dialog function
     fun createOTPDialog(){
