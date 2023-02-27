@@ -4,41 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".HomeFragment">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
+            android:id="@+id/userProfileImage"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@drawable/icon"
-            android:id="@+id/userProfileImage"
-            />
+            android:background="@drawable/icon" />
 
         <TextView
+            android:id="@+id/useProfileName"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:textSize="18dp"
             android:textColor="@color/black"
-            android:id="@+id/useProfileName"
-            />
+            android:textSize="18dp" />
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:textSize="24sp"-->
+        <!--            android:text="@string/latest_videos"-->
+        <!--            android:gravity="center"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:textColor="#0000FF"-->
+
+        <!--            />-->
 
     </LinearLayout>
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/homeRecycler"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="40sp"
-        android:text="HOME"
-        android:gravity="center"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/bottomNav"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
 
 
