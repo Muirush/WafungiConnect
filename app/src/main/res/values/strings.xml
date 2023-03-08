@@ -5,4 +5,14 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="latest_videos">Latest Videos</string>
+<!--  Instruments  -->
+    <string name="leadguitar">Lead</string>
+    <string name="bassguitar">Bass </string>
+    <string name="accousticguitar">A. Guitar</string>
+    <string name="Drums">Drumset</string>
+    <string name="piano">Piano</string>
+    <string name="violin">Guitar</string>
+    <string name="percussion">Percussion</string>
+    <string name="sax">Sax</string>
+    <string name="trumpet">Trumpet</string>
 </resources>
