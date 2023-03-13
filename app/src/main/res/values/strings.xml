@@ -11,8 +11,21 @@
     <string name="accousticguitar">A. Guitar</string>
     <string name="Drums">Drumset</string>
     <string name="piano">Piano</string>
-    <string name="violin">Guitar</string>
+    <string name="violin">Violin</string>
     <string name="percussion">Percussion</string>
     <string name="sax">Sax</string>
     <string name="trumpet">Trumpet</string>
+<!--    Music type-->
+    <string name="seben">Seben</string>
+    <string name="jazz">jazz</string>
+    <string name="church">Church</string>
+    <string name="rhumba">Rhumba</string>
+    <string name="tradition">Tradition</string>
+    <string name="congo">Congo</string>
+    <string name="south_america">South America</string>
+    <string name="american">American</string>
+    <string name="club">Club</string>
+    <string name="reggae">Reggae</string>
+
+
 </resources>
